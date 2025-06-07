@@ -46,6 +46,11 @@ spec:
             httpGet:
               path: /
               port: http
+          {{- if .Values.tolgee.envFromSecretName }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.tolgee.envFromSecretName }}
+          {{- end }}
           env:
             - name: "tolgee.postgres-autostart.enabled"
               value: 'false'
