@@ -12,7 +12,7 @@ This chart provide :
 ## Quick Start
 
 ```bash
-helm repo add tolgee https://throrin19.github.io/helm-tolgee/
+helm repo add tolgee https://vexdev.github.io/helm-tolgee/
 
 helm install tolgee tolgee/tolgee \
 --set postgresql.auth.password=moreSecurePassword
@@ -22,7 +22,7 @@ helm install tolgee tolgee/tolgee \
 
 | Value | Description | Default Value |
 | --- | --- | --- |
-| image.tag | Tolgee version | 2.30.3 |
+| image.tag | Tolgee version | 3.120.0 |
 | service.port | Service port | 8080 |
 | ingress.enabled | Enable or not Ingress | `false` |
 | tolgee.persistence.enabled | Activate or not postgres persistence | `true` |
