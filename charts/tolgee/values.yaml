@@ -75,11 +75,10 @@ tolerations: []
 affinity: {}
 
 postgresql:
-  global:
-    image:
-      registry: docker.io
-      repository: bitnamilegacy/postgresql
-      tag: 14.3.0-debian-11-r0
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/postgresql
+    tag: 14.3.0-debian-11-r0
   enabled: true
   architecture: "standalone"
   auth:
